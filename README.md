@@ -1,3 +1,13 @@
+
+## IMPORTANT: This repo is not approved for sharing with customers, or any other exposure outside of Grafana Labs.
+It has no license attached. 
+
+Do not share!
+
+(For the moment, this is only meant for sharing some ideas around the OA team).
+
+<br>
+
 # deploy-otel-demo-alloy
 
 ## Video Walkthrough
