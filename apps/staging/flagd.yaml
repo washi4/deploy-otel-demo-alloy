@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: otel-demo-flagd-config
-  namespace: otel-demo
+  namespace: open-telemetry
 data:  
   demo.flagd.json: |
     {
