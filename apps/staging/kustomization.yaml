@@ -8,6 +8,3 @@ patches:
   - path: oteldemo-values.yaml
     target:
       kind: HelmRelease
-  - path: flagd.yaml
-    target:
-      kind: ConfigMap
