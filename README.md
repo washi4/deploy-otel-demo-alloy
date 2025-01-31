@@ -115,11 +115,11 @@ Go to your cloud account, and use the Explore Logs UI to see that logs are arriv
 
 # Getting Started
 
-Please see the "how-to-run.md" page (in zzz_documentation) for more detailed instructions on running this project.
+Please see [how-to-run page](./zzz_documentation/how-to-run.md) for more detailed instructions on running this project.
 
 <br>
 
 # Further Learning
 
-Please see the "overview.md" page (in zzz_documentation) for more detail on the overall project.
+Please see the [overview page](./zzz_documentation/overview.md) for more detail on the overall project.
 
