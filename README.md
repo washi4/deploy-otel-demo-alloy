@@ -40,13 +40,13 @@ Code:          VSCode, or whatever solution you like
 ### Fork, then clone, this repo
 Cloning without forking won't work. Make your own fork, then clone your fork to your machine. Then cd into the top level directory.
 
-> (For the moment, there is a [parallel version of this repo](https://github.com/danstadler-pdx/deploy-otel-demo-alloy), that you can fork. We are working on an improvement for this step, that we will share shortly.)
+> (For the moment, this project cannot be forked. Instead, please follow [these directions](zzz_documentation/duplicate-repo.md).)
 
 
 
 <br>
 
-### Create a file like this, and make sure you don't commit it into source code management
+### Create a file called exports.env, with this content:
 ```
 export GITHUB_USER=
 export GITHUB_TOKEN=
@@ -54,10 +54,11 @@ export ALLOY_CLOUD_OTLP_URL=
 export ALLOY_CLOUD_OTLP_USERNAME=
 export ALLOY_CLOUD_OTLP_PASSSWORD_BASE64=
 ```
+> (Note that the .gitignore in this project should keep this file from being checked in, if you name it with a .env extension)
 
 <br>
 
-### Fill in the values for those fields
+### Fill in the values in exports.env
 First 2: Fill in your GH username, and go get a "classic personal access token" from GH with all Repo permissions enabled; no other permissions needed.
 
 Last 3:  From your Grafana Cloud Portal, go into a stack, then into the OpenTelemetry section, and get your username, url, and auth token.
@@ -69,8 +70,8 @@ Before putting the Grafana Cloud OTel auth token into its place in the above exp
 
 ### Run the 5 exports
 Your choice:
-- make the file executable and run it;
-- copy/paste the export statements to the command line;
+- make exports.env executable and run it;
+- copy/paste the export statements from exports.env to the command line;
 - make them part of your environment setup in another way of your choosing.
 
 <br>
