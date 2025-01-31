@@ -42,6 +42,8 @@ Code:          VSCode, or whatever solution you like
 ### Fork, then clone, this repo
 Cloning without forking won't work. Make your own fork, then clone your fork to your machine. Then cd into the top level directory.
 
+> (Note that there is a [parallel version of this repo](https://github.com/danstadler-pdx/deploy-otel-demo-alloy), that you can fork, while I work on how we will make this "official" version of the repo properly public so it can be forked as well.
+
 <br>
 
 ### Create a file like this, and make sure you don't commit it into source code management
