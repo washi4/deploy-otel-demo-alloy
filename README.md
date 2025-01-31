@@ -63,8 +63,15 @@ First 2: Fill in your GH username, and go get a "classic personal access token" 
 
 Last 3:  From your Grafana Cloud Portal, go into a stack, then into the OpenTelemetry section, and get your username, url, and auth token.
 
+<br>
+
 ### IMPORTANT: base64 encode your token
 Before putting the Grafana Cloud OTel auth token into its place in the above exports, base64 encode it.
+```
+echo -n YOUR_TOKEN_HERE | base64
+```
+The output of that command is what you place into exports.env.
+
 
 <br>
 
