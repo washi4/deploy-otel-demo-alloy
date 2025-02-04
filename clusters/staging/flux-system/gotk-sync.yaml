@@ -11,7 +11,7 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/danstadler-pdx/deploy-otel-demo-alloy
+  url: ssh://git@github.com/grafana/deploy-otel-demo-alloy
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
