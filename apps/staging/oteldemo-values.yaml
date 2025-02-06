@@ -29,9 +29,7 @@ spec:
     opensearch:
       enabled: false
 
-    # components:
-
-    #   # set up LB ingress for the proxy (i.e. for k6 testing)
+    components:
       frontendProxy:
         service:
           type: LoadBalancer
