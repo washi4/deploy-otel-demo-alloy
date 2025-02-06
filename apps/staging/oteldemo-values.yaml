@@ -32,6 +32,6 @@ spec:
     # components:
 
     #   # set up LB ingress for the proxy (i.e. for k6 testing)
-      frontendProxy:
-        service:
-          type: LoadBalancer
+      # frontendProxy:
+      #   service:
+      #     type: LoadBalancer
