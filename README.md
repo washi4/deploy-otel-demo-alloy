@@ -28,8 +28,6 @@ Code:          VSCode, or whatever solution you like
 ### Fork, then clone, this repo
 Cloning without forking won't work. Make your own fork, then clone your fork to your machine. Then cd into the top level directory.
 
-> (For the moment, this project cannot be forked. Instead, please follow [these directions](zzz_documentation/duplicate-repo.md).)
-
 
 
 <br>
