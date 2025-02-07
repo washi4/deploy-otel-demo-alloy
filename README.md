@@ -1,16 +1,7 @@
-
-## This repo is not yet approved for sharing with customers, or any other exposure outside of Grafana Labs.
-It has no license attached. Do not share this repo to customers! We're working on how to get this ready.
-
-<br>
-<br>
-
 # deploy-otel-demo-alloy
 This project helps you accelerate the process of standing up the [OpenTelemetry Demo](https://opentelemetry.io/docs/demo/architecture/) and Grafana Alloy, with Alloy shipping your OTel telemetry to your Grafana Cloud account.
 
 This README page gives you the quick setup steps; the links further down give you more detail.
-
-For a quick intro to this repo, try [watching this video](https://drive.google.com/file/d/1ptZXiM8xO8fh16wI8VjqDNeqAqljWsM2/view?usp=sharing).
 
 <br>
 <br>
