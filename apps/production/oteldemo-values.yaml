@@ -12,7 +12,7 @@ spec:
     default:
       envOverrides:
         - name: OTEL_COLLECTOR_NAME
-          value: alloy.collector
+          value: k8s-monitoring-alloy-receiver.collector
 
     # turn off the included olly stack
     opentelemetry-collector:
