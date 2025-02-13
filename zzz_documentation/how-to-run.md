@@ -63,7 +63,7 @@ export ALLOY_CLOUD_OTLP_USERNAME=YOUR_USERNAME_HERE
 export ALLOY_CLOUD_OTLP_PASSSWORD_BASE64=YOUR_BASE_64_ENCODED_TOKEN_HERE
 ```
 
-Make sure that the file "./pre-provision/pre-provision.sh" is executable on your system.
+Make sure that the file "./pre-provision/alloy.sh" is executable on your system.
 
 <br>
 
@@ -72,7 +72,7 @@ Make sure that the file "./pre-provision/pre-provision.sh" is executable on your
 Now, as the Platform Engineer, you can pre-provision the ConfigMap and Secret needed by Alloy, so that it can ship telemetry to your Grafana Cloud instance. These resources will be deployed into a new namespace called "collector". Run the following:
 
 ```
-./pre-provision/pre-provision.sh
+./pre-provision/alloy.sh
 ```
 
 You can use k9s or another viewing tool to check that the Namespace, ConfigMap and Secret have been created. 

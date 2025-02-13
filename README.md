@@ -73,7 +73,7 @@ Your choice:
 You should now be good to run the following 2 commands, from the root directory of the project.
 
 ```
-./pre-provision/pre-provision.sh
+./pre-provision/alloy.sh
 ```
 
 ```
