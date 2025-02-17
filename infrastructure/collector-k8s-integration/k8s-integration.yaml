@@ -30,29 +30,17 @@ spec:
         kind: HelmRepository
         name: k8s-monitoring
       interval: 5m
+
+  # https://fluxcd.io/flux/components/helm/helmreleases/#values-references
+  # note that we can use both valuesFrom, and values:
+  valuesFrom:
+    - kind: ConfigMap
+      name: k8s-int-otlp-destinations
+      valuesKey: destinations-list
+
   values:
     cluster:
       name: stadler-k8s-int
-
-    destinations:
-      - name: otlp-gateway
-        type: otlp
-        url: https://YOUR_OTLP_GATEWAY.grafana.net/otlp
-        protocol: http
-
-        auth:
-          type: basic
-          usernameKey: username
-          passwordKey: password
-        secret:
-          create: false
-          name: grafanacloud-otlphttp-secret
-          namespace: collector
-
-        metrics: {enabled: true}
-        logs: {enabled: true}
-        traces: {enabled: true}
-
     alloy-receiver:
       enabled: true
       controller:
@@ -67,7 +55,6 @@ spec:
             port: 4317
             targetPort: 4317
             protocol: TCP
-
     applicationObservability:
       enabled: true
       receivers:
@@ -76,15 +63,11 @@ spec:
             enabled: true
           http:
             enabled: true
-
     clusterEvents:
       enabled: true
-
     clusterMetrics:
       enabled: true
-
     alloy-metrics:
       enabled: true
-
     alloy-singleton:
       enabled: true
