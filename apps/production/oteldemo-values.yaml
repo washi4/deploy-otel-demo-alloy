@@ -30,9 +30,8 @@ spec:
     opensearch:
       enabled: false
 
-    # components:
-
-    #   # set up LB ingress for the proxy (i.e. for k6 testing)
-    #   frontendProxy:
-    #     service:
-    #       type: LoadBalancer
+    # uncommment 4 lines below to expose the frontend proxy with an external IP address (tested only on GKE)
+    components:
+      frontendProxy:
+        service:
+          type: LoadBalancer
